@@ -27,7 +27,7 @@ variable "buck-name" {
 
 variable "user-name" {
   description = "Enter your User Name"
-  default = "King-Kong"
+  default = "king-kong"
 }
 
 variable "ins-name" {
