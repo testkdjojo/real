@@ -33,7 +33,7 @@ variable "user-name" {
 }
 
 variable "ins-name" {
-  default = "ins-k21"
+  default = "ins-k211"
 }
 
 
