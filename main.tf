@@ -13,11 +13,8 @@ resource "aws_instance" "myname" {
 }
 
 resource "aws_s3_bucket" "name" {
-  bucket = "byck"
+  bucket = "${var.user-name}-bucket"
   depends_on = [ aws_instance.myname ]
-  tags = {
-    Name = "byck"
-  }
 }
 
 output "s3id" {
@@ -29,7 +26,8 @@ variable "buck-name" {
 }
 
 variable "user-name" {
-  default = ""
+  description = "Enter your User Name"
+  default = "King-Kong"
 }
 
 variable "ins-name" {
